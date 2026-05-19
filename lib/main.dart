@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import 'providers/timer_provider.dart';
+import 'providers/Member2_timer_provider.dart';
 
 void main() {
   runApp(

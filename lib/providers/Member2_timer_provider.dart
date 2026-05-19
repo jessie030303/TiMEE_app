@@ -18,4 +18,4 @@ class TimerNotifier extends StateNotifier<int> {
   void reset() {
     state = 180;
   }
-}
+} // this is just example, can change yerr
