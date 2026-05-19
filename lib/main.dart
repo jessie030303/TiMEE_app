@@ -1,58 +1,31 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import 'providers/Member2_timer_provider.dart';
+import 'screens/Member1_home_screen.dart';
 
 void main() {
   runApp(
-    ProviderScope(
+    const ProviderScope(
       child: MyApp(),
     ),
   );
 }
 
-class MyApp extends ConsumerWidget {
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
-
-    final timer = ref.watch(timerProvider);
-
+  Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text("Noodle Timer"),
-        ),
+      debugShowCheckedModeBanner: false,
 
-        body: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
+      title: 'Noodle Timer App',
 
-              Text(
-                "$timer seconds",
-                style: TextStyle(fontSize: 30),
-              ),
-
-              SizedBox(height: 20),
-
-              ElevatedButton(
-                onPressed: () {
-                  ref.read(timerProvider.notifier).decrement();
-                },
-                child: Text("Decrease"),
-              ),
-
-              ElevatedButton(
-                onPressed: () {
-                  ref.read(timerProvider.notifier).reset();
-                },
-                child: Text("Reset"),
-              ),
-            ],
-          ),
-        ),
+      theme: ThemeData(
+        primarySwatch: Colors.orange,
       ),
+
+      home: const HomeScreen(),
     );
   }
 }
