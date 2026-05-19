@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "436944676644",
+    "project_id": "noodletimerapp",
+    "storage_bucket": "noodletimerapp.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:436944676644:android:a81fc4b3812b93d24775b1",
+        "android_client_info": {
+          "package_name": "com.example.noodletimerapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAU8BRVjX6BvzJOgtjbfkYx-z249BMIWkk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
